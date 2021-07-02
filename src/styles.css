@@ -21,7 +21,7 @@
   display: grid;
   grid-template:
     "display display display display" 1.2fr
-    "clear divide multiply substract" 1fr
+    "clear divide multiply subtract" 1fr
     "seven eight nine add" 1fr
     "four five six add" 1fr
     "one two three equals" 1fr
