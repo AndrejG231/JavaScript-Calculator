@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.screen {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Calculator container */
+.calculator {
+  width: 300px;
+  height: 500px;
+  border: 2px solid black;
+  border-radius: 5px;
+  display: grid;
+  grid-template:
+    "display display display display" 1.2fr
+    "clear divide multiply substract" 1fr
+    "seven eight nine add" 1fr
+    "four five six add" 1fr
+    "one two three equals" 1fr
+    "zero zero decimal equals" 1fr
+    /1fr 1fr 1fr 1fr;
+}
+
+/* Display container */
+.displayContainer {
+  grid-area: display;
+  margin: 2px;
+  border: 2px solid black;
+  border-radius: inherit;
+  overflow: hidden;
+  width: calc(100% -4px);
+  height: calc(100% -4px);
+  position: relative;
+}
+
+/* Display text */
+#display {
+  text-align: right;
+  white-space: nowrap;
+  font-size: 60px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
